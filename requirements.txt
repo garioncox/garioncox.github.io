@@ -49,8 +49,8 @@
     2) -> styles.css
 
 8) at least 2 instances where you use javascript add event listener
-    1) -> index.html
-    2) -> index.html
+    1) -> theme-toggle.js
+    2) -> weatherApp.js
 
 9) at least 2 instances where you use document. querySelector or querySelectorAll
     1) -> marsRover.js

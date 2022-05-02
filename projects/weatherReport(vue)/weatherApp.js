@@ -1,5 +1,6 @@
 let url;
-window.onload = init;
+// window.onload = init;
+window.addEventListener("load", init);
 
 
 let app = Vue.createApp({

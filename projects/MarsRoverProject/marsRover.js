@@ -7,7 +7,7 @@ window.onload = init;
 let app = Vue.createApp({
     data() {
         return {
-            images : null
+            images : []
         };
 
     },
@@ -16,10 +16,13 @@ let app = Vue.createApp({
             for(let field of document.querySelectorAll(".form-check-input")) {
                 field.checked = false;
             }
+
+            this.images.length = 0;
         },
 
         getImages() {
             console.log("Retreiving Images...");
+            this.images.length = 0;
             checkFields();
         }
     }
@@ -40,6 +43,6 @@ function queryServer(id) {
     fetch(urlStub + "&camera=" + id + "&api_key=" + key)
         .then(response => response.json())
         .then(data => {
-            app.images = data.photos;
+            app.images = app.images.concat(data.photos);
         });
 }
