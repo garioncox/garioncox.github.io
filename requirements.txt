@@ -1,0 +1,71 @@
+
+1) at least 10 different html element types
+    1) nav -> index.html
+    2) div -> index.html
+    3) ul -> index.html
+    4) li -> index.html
+    5) a -> index.html
+    6) i -> index.html
+    7) img -> index.html
+    8) footer -> index.html
+    9) p -> index.html
+    10) main -> cocoStyles.css
+
+2) at least 10 different html attribute names
+    1) src -> index.html
+    2) class -> index.html
+    3) style -> index.html
+    4) id -> index.html
+    5) href -> index.html
+    6) alt -> index.html
+    7) rel -> index.html
+    8) aria-current -> index.html
+    9) data-bs-toggle -> index.html
+    10) aria-expanded -> index.html
+
+3) at least one image with correct alt attribute
+    -> index.html
+
+4) at least 10 css rules
+    1) background-color -> styles.css
+    2) color -> styles.css
+    3) opacity -> styles.css
+    4) font-size -> styles.css
+    5) padding -> cocoStyles.css
+    6) margin -> cocoStyles.css
+    7) align-content -> cocoStyles.css
+    8) width -> cocoStyles.css
+    9) display -> cocoStyles.css
+    10) grid-template-areas -> cocoStyles.css
+
+5) css flexbox
+    -> nnStyles.css
+
+6) css grid
+    -> cocoStyles.css
+
+7) at least 2 media queries (to support mobile and tablet sized displays) on a page
+    1) -> styles.css
+    2) -> styles.css
+
+8) at least 2 instances where you use javascript add event listener
+    1) -> index.html
+    2) -> index.html
+
+9) at least 2 instances where you use document. querySelector or querySelectorAll
+    1) -> marsRover.js
+    2) -> marsRover.js
+
+10) ajax to interact with an API
+    -> marsRover.js
+
+11) a javascript class or javascript modules
+    -> marsRover.js
+
+12) optional (5 bonus points each):
+    a) css framework (e.g. bootstrap) on a page
+        -> styles.css
+
+    d) use a javascript framework (e.g. jquery, vue, or react) on one page
+        -> marsRover.html
+

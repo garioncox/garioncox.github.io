@@ -1,0 +1,35 @@
+body {
+    background-color: #d77a61;
+}
+
+footer {
+    background-color: #403D39;
+    color: CCC5B9;
+    opacity: 0.9;
+}
+
+i {
+    color: #CCC5B9;
+}
+
+/* xs */
+@media screen {
+    p {
+        font-size: large;
+    }
+
+    li {
+        font-size: large;
+    }
+} 
+
+/* lg  */
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: x-large;
+    }
+
+    li {
+        font-size: x-large;
+    }
+}

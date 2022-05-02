@@ -1,0 +1,45 @@
+main>*, div>a {
+    padding: 1em;
+    margin: 1em;
+    align-content: center;
+}
+
+.img1 {
+    width: 96%;
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "text1 text1 ."
+            ". img1 img1"
+            "text2 text2 .";
+    }
+
+    .text1 {
+        grid-area: text1;
+    }
+
+    .text2 {
+        grid-area: text2;
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+}
+
+/* lg  */
+@media screen and (min-width: 1200px) {
+    main {
+        grid-template-areas:
+        "text1 text1 . . . . ."
+        "text1 text1 . . . img1 img1"
+        ". . . . . img1 img1"
+        "text2 text2 text2 text2 . . .";
+    }   
+}
