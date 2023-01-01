@@ -2,7 +2,6 @@ let url;
 // window.onload = init;
 window.addEventListener("load", init);
 
-
 let app = Vue.createApp({
     data() {
         return {

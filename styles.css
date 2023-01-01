@@ -25,22 +25,14 @@ i {
 
 /* xs */
 @media screen {
-    p {
-        font-size: large;
-    }
-
-    li {
+    p, li {
         font-size: large;
     }
 } 
 
 /* lg  */
 @media screen and (min-width: 1200px) {
-    p {
-        font-size: x-large;
-    }
-
-    li {
+    p, li {
         font-size: x-large;
     }
 }

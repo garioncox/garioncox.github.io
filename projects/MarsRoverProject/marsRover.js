@@ -2,8 +2,6 @@ let id = "a745957a-af03-45d0-b48c-e7952e09d10f";
 let key = "KkniDDjh0TpD0H6ucpTRLpiBHvp2GvidtMIFlWKV";
 let urlStub = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000";
 
-window.onload = init;
-
 let app = Vue.createApp({
     data() {
         return {
@@ -28,8 +26,6 @@ let app = Vue.createApp({
     }
 }).mount("main");
 
-function init() {
-}
 
 function checkFields() {
     for(let field of document.querySelectorAll(".form-check-input")) {
