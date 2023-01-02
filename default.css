@@ -24,9 +24,10 @@ i {
 }
 
 img {
-    object-fit: contain;
+    object-fit: cover;
     width: 80%;
     height: auto;
+    max-width: 80vw;
     border-radius: 1.5%;
 }
 
