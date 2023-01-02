@@ -1,0 +1,8 @@
+/* sm */
+@media screen{
+
+    .img1 {
+        vertical-align: center;
+        max-width: 800px;
+    }
+}
