@@ -10,9 +10,6 @@
 /* xs */
 @media screen {
     #selfie {
-        width: 80%;
-        height: auto;
-        border-radius: 1.5%;
         max-width: 500px;
     }
 

@@ -23,6 +23,12 @@ i {
     color: #d77a61;
 }
 
+img {
+    width: 80%;
+    height: auto;
+    border-radius: 1.5%;
+}
+
 /* xxs */
 @media screen {
     .header-container {
