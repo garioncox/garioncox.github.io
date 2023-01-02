@@ -1,0 +1,26 @@
+.background {
+    /* From https://www.pexels.com/photo/rock-formation-during-night-time-167843/ */
+    /* No attribution required */
+    background-image: url("/images/pexels-pixabay-167843.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+.background>div {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+/* lg  */
+@media screen and (min-width: 1200px) {
+    #sun {
+        max-width: 1000px;
+    }
+
+}

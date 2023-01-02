@@ -12,7 +12,7 @@ main>*, div>a {
 @media screen and (min-width: 768px) {
     main {
         display: grid;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: auto;
         grid-template-areas:
             "text1 text1 ."

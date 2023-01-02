@@ -4,12 +4,12 @@ window.onload = init;
 function init() {
     document.querySelector("#theme-toggle").addEventListener("click", function () {
         if (!altStyles) {
-            document.querySelector("#theme").href = "/altstyles.css";
+            document.querySelector("#theme").href = "/altdefault.css";
             altStyles = true;
         }
 
         else {
-            document.querySelector("#theme").href = "/styles.css";
+            document.querySelector("#theme").href = "/default.css";
             altStyles = false;
         }
     }); 

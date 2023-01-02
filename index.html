@@ -23,7 +23,8 @@
     </script>
 
     <!-- Page Boilerplate -->
-    <link rel="stylesheet" href="/styles.css" id="theme" />
+    <link rel="stylesheet" href="/default.css" id="theme" />
+    <link rel="stylesheet" href="/index.css" />
     <title>Garion Cox Resume</title>
     <script src="/theme-toggle.js"></script>
 </head>
@@ -40,53 +41,84 @@
 
     <!-- main content -->
     <main>
-        <div class="container-fluid">
-            <div class="d-flex flex-column flex-md-row mx-4 my-5 justify-content-evenly">
-                <div class="d-flex flex-column flex-md-row flex-fill align-items-md-center justify-content-end my-2">
-
-                    <div class="d-flex col-md-4 order-md-1 flex-fill">
-
-                        <ul>
-                            <li>
-                                I am: a student at Snow College, currently working towards my Software Engineer BA
-                                (2025).
-                            </li>
-                            <li>
-                                I find joy in: learning, exploring new topics, progressing forward, and helping others.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="d-flex col-md-4 order-3 justify-content-center">
-                        <ul>
-                            <li>C#/.Net:
-                                <i v-for="n in 5" class="bi bi-star-fill"></i>
-                            </li>
-                            <li>HTML:
-                                <i v-for="n in 5" class="bi bi-star-fill"></i>
-                            </li>
-                            <li>JS:
-                                <i v-for="n in 4" class="bi bi-star-fill"></i>
-                                <i v-for="n in 1" class="bi bi-star"></i>
-                            </li>
-                            <li>Python:
-                                <i v-for="n in 4" class="bi bi-star-fill"></i>
-                                <i v-for="n in 1" class="bi bi-star"></i>
-                            </li>
-                            <li>Octave:
-                                <i v-for="n in 2" class="bi bi-star-fill"></i>
-                                <i v-for="n in 3" class="bi bi-star"></i>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 my-4 mb-md-0 order-md-3">
-                        <img class="img-fluid w-100 p-2" style="border-radius: 25%;" src="images/icon.jpg" alt="icon" />
-                    </div>
-                </div>
-
+        <div class="background header-container">
+            <div class="d-flex flex-fill justify-content-center py-4">
+                <img src="images/garion-cox-selfie.jpg" id="selfie" alt="image of garion cox" />
+            </div>
+            <div class="container-fluid d-flex justify-content-center align-items-end">
+                <h1 class="display-4-lg"><b>Garion Cox,<br>Student at Snow College</b></h1>
             </div>
         </div>
+
+        <div class="container-fluid content-container d-flex">
+            <div class="row d-flex flex-fill align-items-start py-5 my-5">
+                <div class="d-none d-lg-block col d-flex py-5"></div>
+                <div class="col d-flex m-5 py-5">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, exercitationem nostrum! Quae a
+                            itaque suscipit tempora et, deleniti iusto voluptatem commodi architecto totam officiis
+                            ipsam cumque, consequuntur deserunt distinctio natus?
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quia, culpa deleniti
+                            laudantium voluptatem vitae recusandae facilis, dolor molestiae exercitationem ducimus.
+                            Commodi, officiis! Non possimus eos temporibus tenetur veritatis nobis!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid content-container d-flex" style="background-color:#bda787">
+            <div class="row d-flex flex-fill align-items-center mx-lg-5 px-lg-5">
+                <h2 id="proficiencyTitle" class="col d-flex justify-self-end align-self-start m-5 py-5">Proficiencies
+                </h2>
+                <div class="col d-flex m-5 py-5 justify-content-center">
+                    <ul id="proficiencyRating">
+                        <li>C#/.Net:
+                            <i v-for="n in 5" class="bi bi-star-fill"></i>
+                        </li>
+                        <li>HTML:
+                            <i v-for="n in 5" class="bi bi-star-fill"></i>
+                        </li>
+                        <li>JS:
+                            <i v-for="n in 4" class="bi bi-star-fill"></i>
+                            <i v-for="n in 1" class="bi bi-star"></i>
+                        </li>
+                        <li>Python:
+                            <i v-for="n in 4" class="bi bi-star-fill"></i>
+                            <i v-for="n in 1" class="bi bi-star"></i>
+                        </li>
+                        <li>Octave:
+                            <i v-for="n in 2" class="bi bi-star-fill"></i>
+                            <i v-for="n in 3" class="bi bi-star"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid content-container d-flex">
+            <div class="row d-flex flex-fill align-items-start py-5 my-5">
+                <div class="d-none d-lg-block col d-flex py-5"></div>
+                <div class="col d-flex m-5 py-5">
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, exercitationem nostrum! Quae a
+                            itaque suscipit tempora et, deleniti iusto voluptatem commodi architecto totam officiis
+                            ipsam cumque, consequuntur deserunt distinctio natus?
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quia, culpa deleniti
+                            laudantium voluptatem vitae recusandae facilis, dolor molestiae exercitationem ducimus.
+                            Commodi, officiis! Non possimus eos temporibus tenetur veritatis nobis!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->
@@ -96,7 +128,7 @@
 
         createApp(footer).mount('#footer')
     </script>
-    <div id="footer">{{ message }}</div>
+    <div id="footer"></div>
 </body>
 
 </html>

@@ -15,10 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        
+
     <!-- Page Boilerplate -->
     <title>COCO-SSD Project Explained</title>
-    <link rel="stylesheet" href="/styles.css" id="theme" />
+    <link rel="stylesheet" href="/default.css" id="theme" />
     <link href="cocossdDescriptionStyles.css" rel="stylesheet">
     <script src="/theme-toggle.js"></script>
 </head>
@@ -34,9 +34,13 @@
     <div id="navbar">{{ message }}</div>
 
     <div>
+        <div class="justify-content-center d-flex flex-fill p-2">
+            <h1>COCO-SSD Demo</h1>
+        </div>
         <main class="m-1 justify-content-center">
             <div class="text1 border border-dark rounded">
-                <p>This project aims to combine my interest in machine learning with my current progress in CS 1810.</p>
+                <p>This project aimed to combine my interest in machine learning with my progress in Into to Web
+                    Development.</p>
                 <p>It uses TensorFlow.js to run the COCO-SSD object detection model.</p>
                 <ul>
                     <li>
@@ -46,15 +50,15 @@
                 </ul>
 
                 <p>
-                    The page automatically loads Tensorflow.js and the COCO-SSD model, but waits to let the user use it
-                    until it has finished loading. Then, the user can use their webcam to show how the model can detect
-                    everyday objects.
+                    The page automatically loads Tensorflow.js and the COCO-SSD model, but stops the user from inputting
+                    data until the model has loaded. Then, the user can use their webcam to show how the model can
+                    detect everyday objects.
                 </p>
 
                 <p>
                     <i class="bi bi-save"></i> Since the class is loaded in the browser, all the data is stored on the
-                    local machine. Since there doesn't need to be a server to connect to, the code can run quicker, more
-                    securely, and offline.
+                    local machine. There isn't a server to connect to, so the model can load quicker,
+                    run securely, and run offline.
                 </p>
             </div>
 
@@ -64,15 +68,22 @@
                 <p>
                     <i class="bi bi-exclamation-diamond-fill"></i>
                     The code is not originally mine! It is an example from a course by
-                    <a href="https://www.edx.org/course/google-ai-for-javascript-developers-with-tensorflowjs">Google</a>
+                    <a
+                        href="https://www.edx.org/course/google-ai-for-javascript-developers-with-tensorflowjs">Google</a>
                     that was tweaked afterwards.
                 </p>
             </div>
         </main>
-
-        <a href="/projects/tensorflow-cocossd-project/cocossd.html" class="btn btn-success">View the project in action</a>
+        <div class="d-none d-md-block">
+            <a href="/projects/tensorflow-cocossd-project/cocossd.html" class="btn btn-success">View
+                the project in
+                action</a>
+        </div>
+        <div class="d-sm-block d-md-none">
+            <a href="/projects/tensorflow-cocossd-project/cocossd.html" class="btn btn-success disabled" aria-disabled="true">Use Different Device To View</a>
+        </div>
     </div>
-    
+
     <!-- Footer -->
     <script type="module">
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'

@@ -19,7 +19,7 @@
 
     <!-- Page Boilerplate -->
     <title>NN Library Explained</title>
-    <link rel="stylesheet" href="/styles.css" id="theme" />
+    <link rel="stylesheet" href="/default.css" id="theme" />
     <link href="nnStyles.css" rel="stylesheet">
     <script src="/theme-toggle.js"></script>
 </head>
@@ -34,61 +34,96 @@
     </script>
     <div id="navbar">{{ message }}</div>
 
-    <div class="justify-content-center">
-        <main class="m-1 justify-content-center">
-            <div class="text1 border border-dark rounded">
-                <p>This project is an automatic differentiation network consisting of a bunch of nodes: operation and
-                    constant.</p>
-                <ul>
-                    <li>
-                        All nodes cache their output and adjoint once computed
-                    </li>
-                    <li>
-                        Only constant nodes have a static value.
-                    </li>
-                    <li>
-                        Operation nodes have a dynamic output, since their output depends on their inputs
-                    </li>
-                </ul>
+    <main>
+        <div class="justify-content-center d-flex flex-fill p-2">
+            <h1>OOP Neural Network Library</h1>
+        </div>
+
+
+        <!-- From: https://www.pexels.com/photo/clear-light-bulb-355948/, no licensing required -->
+        <div class="justify-content-center d-flex flex-fill p-2">
+            <img class="img1 m-2 rounded" src="/images/nn-background.jpg" alt="visual project aid">
+        </div>
+
+        <div class="justify-content-center">
+            <div class="m-4 justify-content-center">
+                <div class="text1 p-2 border border-dark rounded">
+                    <p>This project was created to combine my interest with machine learning with my progress in my OOP
+                        Fundamentals course. At the time, I was learning about inheritance, recursion, and polymorphism
+                        as well as getting a grasp on C# (as I had come from a python background), unit testing, and
+                        github basics.</p>
+
+                    <p>Through research and many thorough discussions with my professors, I was able to gain a basic
+                        knowledge on recursively computing partial derivatives, how deep learning functions on a surface
+                        level, and how OOP assists other libraries (such as PyTorch).</p>
+
+                        <hr>
+
+                    <p><i class="bi bi-exclamation-diamond-fill"></i> This project is not complete by any means. It is a proof of concept and a learning opportunity.
+                        It does not take big-O notation into account, as we had not covered that topic in any of my
+                        classes when this project was created.</p>
+                </div>
             </div>
+        </div>
 
-            <!-- From: https://www.pexels.com/photo/clear-light-bulb-355948/, no licensing required -->
-            <img class="img1 m-2" src="/images/ai-icon.jpg" alt="visual project aid">
+        <div class="justify-content-center">
+            <div class="m-4 justify-content-center">
+                <div class="text1 p-2 border border-dark rounded">
+                    <p>This project is an automatic differentiation network consisting of a bunch of nodes: operation
+                        and
+                        constant.</p>
+                    <ul>
+                        <li>
+                            All nodes cache their output and adjoint once computed
+                        </li>
+                        <li>
+                            Only constant nodes have a static value.
+                        </li>
+                        <li>
+                            Operation nodes have a dynamic output, since their output depends on their inputs
+                        </li>
+                    </ul>
+                    <hr>
 
-            <div class="text2 border border-dark rounded">
-                <p>You can create your own network by:</p>
-                <ol>
-                    <li>
-                        Creating n amount of InputNodes
-                    </li>
-                    <li>
-                        Creating n amount of OperationNodes
-                    </li>
-                    <li>
-                        Linking them to n CostNodes
-                    </li>
-                </ol>
-                <p>In order to get the network to train, you also need to set ValueNodes for each OperationNode and
-                    CostNode as weights and biases.</p>
-                <p>You then set the value for each InputNode (InputNode.Value = value) and compute the output of each
-                    CostNode (CostNode.getOutput()).</p>
-                <p>To train the network, compute each ValueNode's adjoint and scale it by some Gamma value
-                    (ValueNode.Value -= ValueNode.getAdjoint()*Gamma).</p>
+                    <p>You can create your own network by:</p>
+                    <ol>
+                        <li>
+                            Creating n amount of InputNodes
+                        </li>
+                        <li>
+                            Creating n amount of OperationNodes
+                        </li>
+                        <li>
+                            Linking them to n CostNodes
+                        </li>
+                    </ol>
+                    <p>In order to get the network to train, you also need to set ValueNodes for each OperationNode
+                        and
+                        CostNode as weights and biases.</p>
+                    <p>You then set the value for each InputNode (InputNode.Value = value) and compute the output of
+                        each
+                        CostNode (CostNode.getOutput()).</p>
+                    <p>To train the network, compute each ValueNode's adjoint and scale it by some Gamma value
+                        (ValueNode.Value -= ValueNode.getAdjoint()*Gamma).</p>
+                </div>
             </div>
-        </main>
+        </div>
 
-        <a href="https://github.com/garioncox/Basic-Neural-Network-Library" class="btn btn-success">Visit the Project's
-            Page</a>
-    </div>
+        <div class="col d-flex align-items-end m-3">
+            <a href="https://github.com/garioncox/Basic-Neural-Network-Library" class="btn btn-success">Visit the
+                Project's
+                Page</a>
+        </div>
+    </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <script type="module">
         import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
         import footer from '/components/footer.js'
 
         createApp(footer).mount('#footer')
     </script>
-    <div id="footer">{{ message }}</div>
+    <div id="footer"></div>
 </body>
 
 </html>

@@ -1,0 +1,34 @@
+.background {
+    /* From https://www.pexels.com/photo/trees-and-grass-field-under-cloudy-sky-during-daytime-186980/ */
+    /* No attribution required */
+    background-image: url("/images/pexels-tahir-shaw-186980.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+.background>div {
+    background-color: gray;
+    opacity: 0.9;
+}
+
+i {
+    color: white;
+}
+
+#sun {
+    max-width: 300px;
+}
+
+/* lg  */
+@media screen and (min-width: 1200px) {
+    #sun {
+        max-width: 1000px;
+    }
+
+}

@@ -22,16 +22,38 @@ i {
     color: #CCC5B9;
 }
 
-/* xs */
+/* xxs */
 @media screen {
-    p, li {
+    .header-container {
+        height: 700px;
+    }
+
+    p,
+    li {
         font-size: large;
     }
-} 
+}
+
+/* sm  */
+@media screen and (min-width: 300px) {
+    .header-container {
+        height: 1000px;
+    }
+}
 
 /* lg  */
 @media screen and (min-width: 1200px) {
-    p, li {
+
+    p,
+    li {
         font-size: x-large;
+    }
+
+    .content-container {
+        height: 900px;
+    }
+
+    .header-container {
+        height: 600px;
     }
 }
